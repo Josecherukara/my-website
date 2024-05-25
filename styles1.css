@@ -34,7 +34,7 @@ body {
         justify-content: center;
         align-items: center;
         height: 5vh; /* Adjust the height as needed */
-        font-size: large;
+        
     }
 nav ul {
     display: flex;
@@ -112,7 +112,7 @@ height:auto;
 .container .column1 .content 
 {
     font-family: 'Times New Roman', Times, serif; /* Change font family */
-    font-size: large; /* Change font size */
+    
 }
 .column2 {
    
@@ -163,7 +163,7 @@ footer {
     
     align-items: center;
     text-align: center;
-    font-size: large; 
+
     z-index: 1000;
 }
 
