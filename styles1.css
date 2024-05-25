@@ -98,10 +98,14 @@ nav ul {
     width: 50%;
     background-color: white;
     padding: 20px;
+   /* font-family: 'Times New Roman', Times, serif;  Change font family */
+    font-size: 8px; /* Change font size */
+}
+.column1 .p
+{
     font-family: 'Times New Roman', Times, serif; /* Change font family */
     font-size: 8px; /* Change font size */
 }
-
 .column2 {
     width: 50%;
     background-color: black;
