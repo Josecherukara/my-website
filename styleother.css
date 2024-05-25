@@ -76,14 +76,14 @@ main {
 .container {
     display: flex;
     width: 100%;
-    max-height: calc(100vh - 60px);
+   /* max-height: calc(100vh - 60px);*/
 }
 
 .column {
     padding: 0px;
     overflow-y: hidden;
     font: 1em sans-serif;
-    height: calc(100vh - 60px); /* Ensure full height of viewport minus header */
+   /* height: calc(100vh - 60px);  Ensure full height of viewport minus header */
 }
 
 .left {
@@ -142,7 +142,7 @@ main {
 }
 
 .middle .canvas-container {
-    display: flex;
+   /* display: flex;*/
     align-items: center;
     justify-content: center;
     height: 100vh; /* Full viewport height */
