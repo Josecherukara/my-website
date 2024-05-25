@@ -9,8 +9,9 @@
 body {
     font-family: Arial, sans-serif;
     /*font-family: 'Times New Roman', Times, serif;  Change font family */
-    font-size: 8px; /* Change font size */
+    /*font-size: 8px; /* Change font size */
     min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: blueviolet;
@@ -100,7 +101,7 @@ nav ul {
     background-color: white;
     padding: 20px;
    /* font-family: 'Times New Roman', Times, serif;  Change font family */
-    font-size: 8px; /* Change font size */
+    /*font-size: 8px; Change font size */
 }
 .container .column1 .content .p
 {
