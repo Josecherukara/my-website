@@ -87,7 +87,6 @@ nav ul {
     display: flex;
     position: relative;
     width: 100%;
-    min-height: 100vh;
    height: auto;
     /*max-height: calc(70vh)  Adjust height to fit between header and footer */
 }
@@ -95,7 +94,7 @@ nav ul {
 .column {
     /*overflow-y: auto;  Enable vertical scrolling for columns */
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
 height:auto;
     
     
@@ -105,7 +104,7 @@ height:auto;
     width: 50%;
     background-color: white;
     padding: 20px;
-    min-height:100;
+    min-height:100%;
     height:auto;
    /* font-family: 'Times New Roman', Times, serif;  Change font family */
     /*font-size: 8px; Change font size */
@@ -119,7 +118,7 @@ height:auto;
    
     width: 50%;
     background-color: black;
-    min-height:100;
+    min-height:100%;
     height:auto;
     color: white;
     padding: 20px;
