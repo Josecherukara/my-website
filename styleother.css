@@ -179,6 +179,8 @@ a {
     }
 
     .content {
+        margin: 5px;
+        padding: 5px;
         grid-template-columns: 1fr;
     }
 }
@@ -194,6 +196,8 @@ a {
 /* Large devices (above 992px) */
 @media (min-width: 993px) {
     .content {
+        margin: 5px;
+        padding: 5px;
         grid-template-columns: repeat(3, 1fr);
     }
 }
