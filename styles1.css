@@ -209,6 +209,8 @@ footer {
     }
 
     .content {
+        margin: 5px;
+        padding: 5px;
         grid-template-columns: 1fr;
     }
 }
@@ -218,8 +220,6 @@ footer {
     .main .left-column .content {
         margin-top: 0;
         grid-template-columns: repeat(2, 1fr);
-        margin: 5px;
-        padding: 5px;
     }
 }
 
