@@ -8,6 +8,8 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
+    /*font-family: 'Times New Roman', Times, serif;  Change font family */
+    font-size: 8px; /* Change font size */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
