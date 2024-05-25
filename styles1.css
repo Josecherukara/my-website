@@ -92,7 +92,6 @@ nav ul {
 }
 
 .column {
-    height: 100%;
     overflow-y: auto; /* Enable vertical scrolling for columns */
     position: relative;
 }
