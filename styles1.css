@@ -80,6 +80,7 @@ nav ul {
     margin-bottom: 100px; /* Adjust margin to keep content above footer */
     overflow-y: auto; /* Enable scrolling for main content */
     display: flex;
+    flex: 1;
     position: relative;
 }
 
@@ -92,13 +93,11 @@ nav ul {
 }
 
 .column {
-    /*overflow-y: auto;  Enable vertical scrolling for columns */
+    overflow-y: auto;  Enable vertical scrolling for columns */
     position: relative;
     min-height: 100%;
-height:auto;
-    
-    
-}
+    height:auto;
+    }
 
 .column1 {
     width: 50%;
