@@ -83,11 +83,13 @@ nav ul {
     display: flex;
     position: relative;
     width: 100%;
-    max-height: calc(100vh - 160px); /* Adjust height to fit between header and footer */
+   /* max-height: calc(100vh - 160px);  Adjust height to fit between header and footer */
 }
 
 .column {
+    height: 100%;
     overflow-y: auto; /* Enable vertical scrolling for columns */
+    position: relative;
 }
 
 .column1 {
