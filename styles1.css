@@ -130,8 +130,8 @@ nav ul {
     margin-bottom: 20px; /* Add margin-bottom to prevent overlap with header */
 }
 .column2 .image-container {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+
     right: 0;
     width: 50%; /* Adjust the width as needed */
     max-width: 200px; /* Set maximum width for the image */
