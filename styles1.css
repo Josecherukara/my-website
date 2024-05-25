@@ -88,7 +88,9 @@ nav ul {
     display: flex;
     position: relative;
     width: 100%;
-    max-height: calc(70vh)  Adjust height to fit between header and footer */
+    min-height: 100vh;
+    max-height: 100vh;
+    /*max-height: calc(70vh)  Adjust height to fit between header and footer */
 }
 
 .column {
