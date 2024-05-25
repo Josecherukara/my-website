@@ -137,11 +137,15 @@ nav ul {
     max-width: 200px; /* Set maximum width for the image */
     padding: 10px; /* Add padding for spacing */
 }
-
-    .column2 .image-container img {
-        width: 100%; /* Ensure the image takes up the full width of its container */
-    }
-
+.fixed-image {
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+   
     .column2 .image-container p {
         text-align: right; /* Align the description to the right */
         margin-top: 5px; /* Add margin for spacing */
