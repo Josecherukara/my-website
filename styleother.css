@@ -161,7 +161,7 @@ main {
 canvas {
     border: 1px solid black; /* Optional: just to make the canvas visible */
 }
-.middle .canvas-container {
+.middle .image-container {
    /* display: flex;*/
     align-items: center;
     justify-content: center;
