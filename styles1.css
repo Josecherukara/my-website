@@ -127,7 +127,7 @@ nav ul li a:hover::after {
 
 .fixed-image {
     position: fixed;
-    bottom:30vh;  /*Place at the bottom */
+    bottom:10vh;  /*Place at the bottom */
     right: 0px; /* Adjust as needed */
     width: 50px; /* Adjust as needed for smaller size */
     height: auto; /* Maintain aspect ratio */
