@@ -106,6 +106,7 @@ nav ul li a:hover::after {
     height: auto;
     padding-bottom: 60px;
     z-index:2;
+        flex-direction: column;
     /* font-family: 'Times New Roman', Times, serif;  Change font family */
     /*font-size: 8px; Change font size */
 }
