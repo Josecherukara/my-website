@@ -99,7 +99,7 @@ nav ul li a:hover::after {
     width: 50%;
     background-color: white;
     padding: 3px;
-    min-height: 80vh;;
+    min-height: 100vh;;
     height: auto;
     /* font-family: 'Times New Roman', Times, serif;  Change font family */
     /*font-size: 8px; Change font size */
@@ -112,7 +112,7 @@ nav ul li a:hover::after {
 .column2 {
     width: 50%;
     background-color: black;
-    min-height: 80vh;
+    min-height: 100vh;
     height: auto;
     color: white;
     padding: 3%;
