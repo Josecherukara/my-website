@@ -140,16 +140,11 @@ nav ul {
 .column2 .fixed-image {
     position: fixed;
     bottom: 0px; /* Adjust as needed */
-    right: 0; /* Adjust as needed */
-    width: 50%; /* Adjust as needed for smaller size */
+    right: 0px; /* Adjust as needed */
+    width: 5%; /* Adjust as needed for smaller size */
     height: auto; /* Maintain aspect ratio */
     z-index: 1000; /* Ensure it stays on top of other elements */
-} 
-   
-    .column2 .image-container p {
-        text-align: right; /* Align the description to the right */
-        margin-top: 5px; /* Add margin for spacing */
-    }
+}
 
 /* Footer styles */
 footer {
