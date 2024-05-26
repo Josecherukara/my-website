@@ -99,7 +99,7 @@ nav ul li a:hover::after {
     width: 50%;
     background-color: white;
     padding: 0%;
-    min-height: 100%;
+    min-height: 80vh;;
     height: auto;
     /* font-family: 'Times New Roman', Times, serif;  Change font family */
     /*font-size: 8px; Change font size */
@@ -112,7 +112,7 @@ nav ul li a:hover::after {
 .column2 {
     width: 50%;
     background-color: black;
-    min-height: 100%;
+    min-height: 80vh;
     height: auto;
     color: white;
     padding: 0%;
@@ -127,8 +127,8 @@ nav ul li a:hover::after {
 
 .fixed-image {
     position: fixed;
-   /* bottom:200px;  Place at the bottom */
-    right: 50px; /* Adjust as needed */
+    bottom:20vh;  /*Place at the bottom */
+    right: 0px; /* Adjust as needed */
     width: 50px; /* Adjust as needed for smaller size */
     height: auto; /* Maintain aspect ratio */
     z-index: 1000; /* Ensure it stays on top of other elements */
