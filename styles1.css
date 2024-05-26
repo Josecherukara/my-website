@@ -144,8 +144,7 @@ nav ul {
     width: 50%; /* Adjust as needed for smaller size */
     height: auto; /* Maintain aspect ratio */
     z-index: 1000; /* Ensure it stays on top of other elements */
-}; /* Ensure it stays on top of other elements */
-}
+} 
    
     .column2 .image-container p {
         text-align: right; /* Align the description to the right */
