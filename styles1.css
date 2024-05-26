@@ -91,15 +91,15 @@ nav ul li a:hover::after {
 .column {
     overflow-y: auto; /* Enable vertical scrolling for columns */
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
     height: auto;
 }
 
 .column1 {
     width: 50%;
     background-color: white;
-    padding: 3px;
-    min-height: 100vh;;
+    padding: 0%;
+    min-height: 80vh;;
     height: auto;
     /* font-family: 'Times New Roman', Times, serif;  Change font family */
     /*font-size: 8px; Change font size */
@@ -112,10 +112,10 @@ nav ul li a:hover::after {
 .column2 {
     width: 50%;
     background-color: black;
-    min-height: 100vh;
+    min-height: 80vh;
     height: auto;
     color: white;
-    padding: 3px;
+    padding: 0%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -127,7 +127,7 @@ nav ul li a:hover::after {
 
 .fixed-image {
     position: fixed;
-    bottom:10vh;  /*Place at the bottom */
+    bottom:20vh;  /*Place at the bottom */
     right: 0px; /* Adjust as needed */
     width: 50px; /* Adjust as needed for smaller size */
     height: auto; /* Maintain aspect ratio */
