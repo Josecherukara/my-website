@@ -137,7 +137,7 @@ nav ul {
     max-width: 200px; /* Set maximum width for the image */
     padding: 10px; /* Add padding for spacing */
 }*/
-.column2 .fixed-image {
+.fixed-image {
     position: fixed;
     bottom: 0px; /* Adjust as needed */
     right: 0px; /* Adjust as needed */
