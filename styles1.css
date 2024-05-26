@@ -12,6 +12,7 @@ body {
     min-height: 100%;
     height: auto;
     display: flex;
+    overflow-y: hidden;
     flex-direction: column;
     background-color: blueviolet;
 }
@@ -74,7 +75,7 @@ nav ul li a:hover::after {
 .main {
     margin-top: 60px; /* Adjust margin to keep content below header */
     margin-bottom: 100px; /* Adjust margin to keep content above footer */
-    overflow-y: auto; /* Enable scrolling for main content */
+    /*overflow-y: auto;  Enable scrolling for main content */
     display: flex;
     flex: 1;
     position: relative;
@@ -83,7 +84,7 @@ nav ul li a:hover::after {
 .container {
     display: flex;
     position: relative;
-    width: 100%;
+    width: 200%;
     height: auto;
     /*max-height: calc(70vh) Adjust height to fit between header and footer */
 }
@@ -102,6 +103,7 @@ nav ul li a:hover::after {
     min-height: 100vh;;
     height: auto;
     padding-bottom: 60px;
+    z-index:2;
     /* font-family: 'Times New Roman', Times, serif;  Change font family */
     /*font-size: 8px; Change font size */
 }
@@ -112,6 +114,7 @@ nav ul li a:hover::after {
 
 .column2 {
     width: 50%;
+    z-index:1;
     background-color: black;
     min-height: 100vh;
     height: auto;
