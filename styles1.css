@@ -129,14 +129,6 @@ nav ul {
 .column1 .name-container {
     margin-bottom: 20px; /* Add margin-bottom to prevent overlap with header */
 }
-/*.column2 .image-container {
-    position: relative;
-
-    right: 0;
-    width: 50%; /* Adjust the width as needed */
-    max-width: 200px; /* Set maximum width for the image */
-    padding: 10px; /* Add padding for spacing */
-}*/
 .fixed-image {
     position: fixed;
     bottom: 0px; /* Adjust as needed */
