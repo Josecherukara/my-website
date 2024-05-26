@@ -141,7 +141,7 @@ nav ul {
     position: fixed;
     bottom: 0px; /* Adjust as needed */
     right: 0px; /* Adjust as needed */
-    width: 5%; /* Adjust as needed for smaller size */
+    width: 5px; /* Adjust as needed for smaller size */
     height: auto; /* Maintain aspect ratio */
     z-index: 1000; /* Ensure it stays on top of other elements */
 }
