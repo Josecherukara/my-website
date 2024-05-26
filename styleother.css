@@ -113,6 +113,7 @@ main {
 }
 
 .middle .canvas-container, .middle .image-container {
+    position:relative;
     align-items: center;
     justify-content: center;
     width: 100%;  /* Full viewport width */
@@ -124,6 +125,7 @@ canvas {
 }
 
 .middle .image-container img {
+    position:relative;
     width: 100%;  /* Full viewport width */
     height: auto;
 }
