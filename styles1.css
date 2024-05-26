@@ -98,7 +98,7 @@ nav ul li a:hover::after {
 .column1 {
     width: 50%;
     background-color: white;
-    padding: 1px;
+    padding: 3px;
     min-height: 100vh;;
     height: auto;
     /* font-family: 'Times New Roman', Times, serif;  Change font family */
@@ -115,7 +115,7 @@ nav ul li a:hover::after {
     min-height: 100vh;
     height: auto;
     color: white;
-    padding: 0%;
+    padding: 3px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
