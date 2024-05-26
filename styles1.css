@@ -83,6 +83,7 @@ nav ul li a:hover::after {
 }
 
 .container {
+     overflow-y: auto; /* Enable vertical scrolling for columns */
     display: flex;
     position: relative;
     width: 100%;
@@ -91,7 +92,7 @@ nav ul li a:hover::after {
 }
 
 .column {
-    overflow-y: auto; /* Enable vertical scrolling for columns */
+   
     position: relative;
     min-height: 100%;
     height: auto;
