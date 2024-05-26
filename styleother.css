@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-color: #2c3e50;
     background-size: 100%;
@@ -78,19 +77,18 @@ main {
     margin-bottom: 0px; /* Adjust margin to keep content above footer */
     display: flex;
     position: relative;
+    width: 100%;
 }
 
 .container {
     display: flex;
     width: 100%;
-   /* max-height: calc(100vh - 60px);*/
 }
 
 .column {
     padding: 0px;
     overflow-y: hidden;
     font: 1em sans-serif;
-   /* height: calc(100vh - 60px);  Ensure full height of viewport minus header */
 }
 
 .left {
@@ -109,12 +107,25 @@ main {
     background-color: rgb(211, 197, 197);
     color: rgb(11, 12, 12);
     border: #2175c9;
-    padding-left: 0%;
-    padding-bottom: 100px
-    padding-right: 0%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+
+.middle .canvas-container, .middle .image-container {
+    align-items: center;
+    justify-content: center;
+    width: 100%;  /* Full viewport width */
+    height: auto;
+}
+
+canvas {
+    border: 1px solid black; /* Optional: just to make the canvas visible */
+}
+
+.middle .image-container img {
+    width: 100%;  /* Full viewport width */
+    height: auto;
 }
 
 .scrollable-content {
@@ -125,50 +136,11 @@ main {
     box-sizing: border-box;
 }
 
-.middle .chessboard {
-    align-self: center;
-    align-items: center;
-}
-
-.middle .chessboard h1 {
-    text-align: center;
-    font-size: medium;
-}
-
-.middle .chessboard h2 {
-    text-align: center;
-    font-size: small;
-}
-
-#whiteCasualities {
-    color: white;
-}
-
 .middle .info-container {
     text-align: center;
     font-size: small;
     color: black;
 }
-
-.middle .canvas-container {
-   /* display: flex;*/
-    align-items: center;
-    justify-content: center;
-    width: 100%;  /* Full viewport width */
-    height:auto;
-}
-
-canvas {
-    border: 1px solid black; /* Optional: just to make the canvas visible */
-}
-.middle .image-container {
-   /* display: flex;*/
-    align-items: center;
-    justify-content: center;
-    width: 100%;  /* Full viewport width */
-    height: auto;
-}
-
 
 .right {
     width: 25%;
@@ -183,9 +155,11 @@ canvas {
 .left, .right {
     overflow-y: hidden;
 }
+
 a {
     color: white;
 }
+
 /* Media queries for different screen sizes */
 
 /* Small devices (up to 576px) */
