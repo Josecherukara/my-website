@@ -82,7 +82,7 @@ main {
 }
 
 .left {
-    width: 25%;
+    width: 15vw;
     background-color: rgb(5, 65, 70);
     
     color: white;
@@ -91,7 +91,7 @@ main {
 }
 
 .middle {
-    width: 50%;
+    width: 70vw;
     justify-content: center;
     text-align: center;
     background-color: rgb(211, 197, 197);
@@ -102,7 +102,7 @@ main {
 }
 
 .right {
-    width: 25%;
+    width: 15vw;
     background-color: rgb(8, 94, 109);
     color: white;
     padding-left: 2%;
@@ -115,7 +115,7 @@ a {
 
 .middle .container-others1,
 .middle .container-others2 {
-    width:100%;
+
     border: 4px solid #f1c40f;
     padding: 10px;
     margin: 10px 0;
@@ -125,24 +125,29 @@ a {
 
 .middle .container-others1 .canvas-container,
 .middle .container-others2 .image-container {
-    width: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 canvas {
-    
+    /*width: 100%;*/
     border: 1px solid black;
 }
 
 .middle .container-others2 .image-container img {
-    width: 100%;
-    height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        width:100%;
+        height:auto;
+        object-fit: contain; /* Ensure the image is fully contained */
+        display: block;
 }
 
 .scrollable-content {
     overflow-y: auto;
+    overflow-x: auto;
     flex-grow: 1;
     padding-right: 0px;
     padding-left: 0px;;
@@ -169,16 +174,16 @@ canvas {
 
 .chessboard-box {
     border: 4px solid #f1c40f;
-    padding: 5%;
-    margin: 20px 0;
+    padding: 0%;
+    margin: 0px;
     background-color: #ffffff;
     border-radius: 10px;
 }
 
 .poem1, .poem2, .poem3 {
     border: 4px solid #f1c40f;
-    padding: 5%;
-    margin: 20px 0;
+    padding: 0%;
+    margin: 0px;
     background-color: #ffffff;
     border-radius: 10px;
 }

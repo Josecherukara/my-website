@@ -98,6 +98,26 @@
       </div>
     </div> 
   </main>  
+ <!-- <script>
+    function resizeCanvas() {
+        const canvas = document.getElementById('chessCanvas');
+        const container = canvas.parentElement;
+        
+        // Set canvas width and height to match container's width and maintain aspect ratio
+        canvas.width = container.clientWidth;
+        canvas.height = canvas.width ; // Adjust the aspect ratio as needed
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    window.addEventListener('load', () => {
+        resizeCanvas(); // Initial resize
+        // Example drawing code to demonstrate the canvas functionality
+        const canvas = document.getElementById('chessCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'red';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    });
+</script>-->
 </body>
 </html>
 
