@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: blueviolet;
+    z-index:0;
 }
 
 .fixed-header {
@@ -103,7 +104,8 @@ nav ul li a:hover::after {
     min-height: 100vh;;
     height: auto;
     padding-bottom: 60px;
-    flex-direction: column;
+    z-index:2;
+        flex-direction: column;
     /* font-family: 'Times New Roman', Times, serif;  Change font family */
     /*font-size: 8px; Change font size */
 }
@@ -115,6 +117,7 @@ nav ul li a:hover::after {
 .column2 {
     width: 50%;
     overflow-y: auto;
+    z-index:1;
     background-color: black;
     min-height: 100vh;
     height: auto;
