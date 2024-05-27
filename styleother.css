@@ -79,42 +79,32 @@ main {
 .column {
     padding: 0;
     overflow-y: auto;
-      margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 .left {
-    width: 25vw;
+    width: 20%;
     background-color: rgb(5, 65, 70);
     
     color: white;
-  margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 5px;
 }
 
 .middle {
-    width: 50vw;
-  margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    width: 55%;
     justify-content: center;
     text-align: center;
     background-color: rgb(211, 197, 197);
-    color: rgb(235, 176, 14);
+    color: rgb(119, 160, 160);
     display: flex;
     flex-direction: column;
     overflow-y: auto;
 }
 
 .right {
-    width: 25vw;
+    width: 25%;
     background-color: rgb(8, 94, 109);
     color: white;
-      margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 5px;
 }
 
 a {
@@ -123,50 +113,41 @@ a {
 
 .middle .container-others1,
 .middle .container-others2 {
-
     border: 4px solid #f1c40f;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
     background-color: #ffffff;
     border-radius: 10px;
 }
 
 .middle .container-others1 .canvas-container,
 .middle .container-others2 .image-container {
-    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 canvas {
-    /*width: 100%;*/
     border: 1px solid black;
 }
 
 .middle .container-others2 .image-container img {
-        max-width: 100%;
-        max-height: 100%;
-        width:100%;
-        height:auto;
-        object-fit: contain; /* Ensure the image is fully contained */
-        display: block;
+    width: 100%;
+    height: auto;
 }
 
 .scrollable-content {
     overflow-y: auto;
-    overflow-x: auto;
     flex-grow: 1;
-      margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding-right: 0px;
+    scroll-padding-left: 0;
     padding-bottom: 100px;
     box-sizing: border-box;
 }
 
 .middle .container-others1 .info-container {
     text-align: left;
+    font-size: small;
     color: black;
 }
 
@@ -184,18 +165,16 @@ canvas {
 
 .chessboard-box {
     border: 4px solid #f1c40f;
-      margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
     background-color: #ffffff;
     border-radius: 10px;
 }
 
 .poem1, .poem2, .poem3 {
     border: 4px solid #f1c40f;
-     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px 0;
     background-color: #ffffff;
     border-radius: 10px;
 }
@@ -209,8 +188,8 @@ canvas {
     }
 
     .content {
-        margin: 5px;
-        padding: 5px;
+        margin: 0px;
+        padding: 0px;
         grid-template-columns: 1fr;
     }
 }
