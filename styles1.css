@@ -100,7 +100,7 @@ nav ul li a:hover::after {
     width: 50%;
     overflow-y: auto;
     background-color: white;
-    padding: 3px;
+    padding: 10px;
     min-height: 100vh;;
     height: auto;
     padding-bottom: 60px;
@@ -129,7 +129,7 @@ nav ul li a:hover::after {
 }
 .column2 .containerRand {
     width: 45%;  /* Adjust the width as needed */
-    height: 55%; /* Adjust the height as needed */
+    height: 63%; /* Adjust the height as needed */
     position: fixed;
     overflow: auto;
     padding:20px;

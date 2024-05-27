@@ -157,7 +157,11 @@ canvas {
     align-items: center;
     width: 100%;
 }
-
+.middle #main-heading
+{
+    color:black;
+    
+}
 .middle .container-others1 h1,
 .middle .container-others2 h1 {
     margin-bottom: 10px;
