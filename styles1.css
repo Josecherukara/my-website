@@ -131,7 +131,7 @@ nav ul li a:hover::after {
     width: 45%;  /* Adjust the width as needed */
     height: 55%; /* Adjust the height as needed */
     position: fixed;
-    overflow: hidden;
+    overflow: auto;
     padding:20px;
     border: 1px solid #ccc;
 }
@@ -145,7 +145,7 @@ nav ul li a:hover::after {
     max-height: 100%;
     width: auto;
     height: auto;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
