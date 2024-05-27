@@ -82,7 +82,7 @@ main {
 }
 
 .left {
-    width: 15vw;
+    width: 25vw;
     background-color: rgb(5, 65, 70);
     
     color: white;
@@ -91,7 +91,7 @@ main {
 }
 
 .middle {
-    width: 70vw;
+    width: 50vw;
     justify-content: center;
     text-align: center;
     background-color: rgb(211, 197, 197);
@@ -102,7 +102,7 @@ main {
 }
 
 .right {
-    width: 15vw;
+    width: 25vw;
     background-color: rgb(8, 94, 109);
     color: white;
     padding-left: 2%;
