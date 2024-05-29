@@ -8,12 +8,15 @@
 
 /* Body styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
     min-height: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
+    background-color: rgb(10, 10, 10);
+    align-items: center;
+    align-content: center;
     z-index:0;
 }
 
@@ -22,16 +25,16 @@ body {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 60px; /* Adjust height as needed */
+    padding: 20px;
     background: linear-gradient(to right, #2c3e50, #3498db);
-    z-index: 1000;
+    z-index: 1;
 }
 
 .fixed-header .buttons {
     display: flex;
+    width:100%;
     justify-content: center;
     align-items: center;
     height: 70px; /* Adjust the height as needed */
@@ -99,47 +102,96 @@ nav ul li a:hover::after {
 .column1 {
     width: 50%;
     overflow-y: auto;
+    overflow-x: auto;
     background-color: white;
-    padding: 10px;
+    padding-left: 30px;
     min-height: 100vh;;
     height: auto;
-    padding-bottom: 60px;
-    z-index:2;
+    padding-bottom: 30px;
+    z-index:0;
         flex-direction: column;
     /* font-family: 'Times New Roman', Times, serif;  Change font family */
     /*font-size: 8px; Change font size */
 }
 
 .container .column1 .content {
-    font-family: 'Times New Roman', Times, serif; /* Change font family */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333; /* Change font family */
 }
+.container .column1 .content .cartooncontainer{
+    width:100%;
+    padding-left: 10%;
+    padding-right: 10%;
+   }
+.container .column1 .content .cartooncontainer img{
+    left: 25%;
+    width:70%;
+   }
+.container .column1 .content  .button {
+    right:10%;
+    display: inline-block;
+    padding: 15px 0px;
+    background-color: #3771a0;
+    color: transparent;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    position: absolute;
+}
+
+/* Button Hover Effect */
+.container .column1 .content .button:hover {
+    background-color: #102c42;
+}
+
+/* Text Overlay */
+.container .column1 .content .button::after {
+    content: attr(data-text);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
 
 .column2 {
     width: 50%;
     overflow-y: auto;
-    z-index:1;
+    vertical-align: middle;
+    position: relative;
+    z-index:0;
     background-color: black;
     min-height: 100vh;
-    height: auto;
+    height:auto;
     color: white;
-    padding: 3%;
+    padding: 1%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .column2 .containerRand {
-    width: 45%;  /* Adjust the width as needed */
-    height: 63%; /* Adjust the height as needed */
+    vertical-align: middle;
+    width: 49%;  /* Adjust the width as needed */
+    height: 68%; /* Adjust the height as needed */
     position: fixed;
     overflow: auto;
-    padding:20px;
-    border: 1px solid #ccc;
+    padding:2px;
+   /* border: 1px solid #ccc;*/
 }
-
+/*
 .column2 .containerRand .box {
-    display: none;  /* Hide the box containing the images */
+   display: none;  /* Hide the box containing the images 
 }
-
+/*
 .column2 .containerRand .box .random-image{
     max-width: 100%;
     max-height: 100%;
@@ -149,7 +201,11 @@ nav ul li a:hover::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    object-fit: contain; /* Ensures the image fits inside the container */
+   /* object-fit: contain; /* Ensures the image fits inside the container 
+}*/
+
+.column2 .containerRand img{
+    width:100%;
 }
 
 
@@ -159,13 +215,23 @@ nav ul li a:hover::after {
 
 .fixed-image {
     position: fixed;
-    bottom:20vh;  /*Place at the bottom */
+    bottom:0vh;  /*Place at the bottom */
     right: 0px; /* Adjust as needed */
-    width: 50px; /* Adjust as needed for smaller size */
+    width: 60px; /* Adjust as needed for smaller size */
     height: auto; /* Maintain aspect ratio */
+    opacity: 0.5; /* Adjust this value to set the transparency level */
     z-index: 1000; /* Ensure it stays on top of other elements */
 }
-
+.copyrt { position: fixed;
+    text-align: left;
+    bottom:0vh;  /*Place at the bottom */
+    left: 0px; /* Adjust as needed */
+    width: 100%; /* Adjust as needed for smaller size */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.5; /* Adjust this value to set the transparency level */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    color:white;
+    }
 /* Footer styles */
 footer {
     position: fixed;
@@ -173,14 +239,14 @@ footer {
     left: 0;
     width: 100%;
     height: 20vh; /* Adjust height as needed */
-    background: linear-gradient(to right, #2c3e50, #3498db);
+    background: linear-gradient(to right,  #3498db,#2c3e50, #000508,black);
     color: #fff;
     padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    z-index: 1000;
+    z-index: 1;
 }
 
 #connect {

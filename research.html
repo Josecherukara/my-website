@@ -1,0 +1,174 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Portfolio</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            background: linear-gradient(to right, #2c3e50, #3498db);
+        }
+        header {
+            background: url('R.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            height: 400px; /* Adjusted height to include buttons */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        h3 {
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-header {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .flex-item {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px 20px;
+            color: #777;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .flex-item {
+                width: 100%;
+            }
+            .button {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Research Portfolio</h1>
+        <div class="button-container">
+            <a href="index.html" class="button">Home</a>
+            <a href="teachingportfolio.html" class="button">Teaching</a>
+            <a href="research.html" class="button">Research</a>
+            <a href="others.html" class="button">Others</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section" id="publications">
+            <div class="section-header">
+                <h2>Publications</h2>
+            </div>
+            <div class="section-content">
+                <p>Here, you can list your notable research publications.</p>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-header">
+                <h2>Projects</h2>
+            </div>
+            <div class="section-content">
+                <p>Describe your key research projects here.</p>
+            </div>
+        </section>
+
+        <section class="section" id="collaborations">
+            <div class="section-header">
+                <h2>Collaborations</h2>
+            </div>
+            <div class="section-content">
+                <p>Highlight your research collaborations with other institutions or researchers.</p>
+            </div>
+        </section>
+
+        <section class="section" id="awards">
+            <div class="section-header">
+                <h2>Awards</h2>
+            </div>
+            <div class="section-content">
+                <p>List any awards or recognitions you have received for your research.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>

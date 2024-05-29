@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Portfolio</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            
+        }
+        .fixed-header {
+            top:0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            height: 25px; /* Adjust height as needed */
+            padding: 20px;
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            z-index: 1;
+        }
+
+        .fixed-header .buttons {
+            display: flex;
+            width:100%;
+            justify-content: center;
+            align-items: center;
+            height: 70px; /* Adjust the height as needed */
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            color: white;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #f1c40f;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+/*
+        header {
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+*/
+        .custom-line {
+            width: 100%;
+            height: 2px;
+            background-color: #3498db;
+            margin: 20px 0;
+        }
+        header h1 {
+            margin: 10px;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        h3 {
+            /*color: #2c3e50;*/
+            color: #3498db;
+        }
+        p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-header {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .flex-item {
+            width: 50%;
+             
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px 20px;
+            color: #777;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+        }
+        @media (max-width: 768px) {
+            .flex-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+   <!-- <header>
+        <h1>Teaching Portfolio</h1>
+    </header>
+    --> 
+    <header class="fixed-header">
+        <div class="buttons">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="teachingportfolio.html">Teaching</a></li>
+                    <li><a href="research.html">Research</a></li>
+                   <!-- <li><a href="#">Group</a></li>-->
+                    <li><a href="others.html">Other</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section class="section">
+            <div class="section-header">
+                <br>
+                <h2>Teaching Experience</h2>
+            </div>
+            <div class="section-content">
+                <p>In my career spanning last five years, I have taught a variety of courses at The cochin college, including:</p>
+                <div class="custom-line"></div>
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h3>Undergraduate Courses</h3>
+                        <ul>
+                            <li>Computer Programming using C++</li>
+                            <li>Thermodynamics</li>
+                            <li>Cosmology</li>
+                        </ul>
+                    </div>
+                    <div class="flex-item">
+                        <h3>Postgraduate Courses</h3>
+                        <ul>
+                            <li>Classical Mechanics</li>
+                            <li>Statistical Mechanics</li>
+                            <li>Quantum Mechanics II</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2>Teaching Approach</h2>
+            </div>
+            <div class="section-content">
+                <p></p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2>Mentoring</h2>
+            </div>
+            <div class="section-content">
+                <p></p>
+                <p>Additionally, I have mentored several graduate and post graduate projects, including:</p>
+                <div class="flex-container">
+                    <div class="custom-line"></div>
+                    <div class="flex-item">
+                        <h3>Undergraduate Student Projects</h3>
+                        <ul>
+                            <li>Bricks (A computer graphics game in C++)</li>
+                            <li>Modelling Diffusion using Random Walk</li>
+                            <li>Lagrange Point</li>
+                            <li>Deriving Friedmann equations</li>
+                        </ul>
+                    </div>
+                    <div class="flex-item">
+                        <h3>Postgraduate Student Projects</h3>
+                        <ul>
+                            <li>A review of- Big-bang, Problems of Big-bang and Possible Solutions. And, a new model of bounce (Miss. Krishnendu Hareendran
+                                (190011020252)
+                                Miss ANJU LAL
+                                (190011020247)
+                                Miss. SANDHRA KAMALAHASAN
+                                (190011020254))</li>
+                            <li>FLRW Cosmology and the Friedmann Equations (Kevin Chacko Mundackal)</li>
+                            <li>Stability Analysis of Power Law Inflation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="button-container">
+            <a href="teachingportfolio.html" class="button">Top</a>
+        </div>
+    </div>
+
+   
+</body>
+</html>
