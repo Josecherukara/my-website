@@ -16,5 +16,5 @@ window.onload = function() {
     displayRandomImage();
 
     // Change the image every 3 seconds
-    setInterval(displayRandomImage, 3000);
+    setInterval(displayRandomImage, 4000);
 };
