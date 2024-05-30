@@ -4,7 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.custom-line {
+    width: 100%;
+    height: 2px;
+    background-color: #3498db;
+    margin: 20px 0;
+}
 /* Body styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -184,7 +189,7 @@ nav ul li a:hover::after {
     position: absolute;
     width: 100%;
     height: auto;
-    top: 60%;
+    top: 65%;
     bottom: auto;
     text-align: right;
     right: 0%;
@@ -277,8 +282,21 @@ footer {
 }
 
 /* Media queries for different screen sizes */
+@media (max-aspect-ratio: 0.8) and (max-width:800) {
+    
+    .container {
+        flex-direction: column;
+    }
+    .column1, .column2 {
+        width: 100%;
+    }
+    .column2 .contact {
+        top: 45%;
+        bottom: auto;
+    }
 
-@media (max-aspect-ratio: 1.5) {
+}
+@media (max-aspect-ratio: 1.0) and (max-width:900) {
     
         .container {
             flex-direction: column;
@@ -287,12 +305,12 @@ footer {
             width: 100%;
         }
         .column2 .contact {
-            top: 71%;
+            top: 62%;
             bottom: auto;
         }
     
 }
-@media (max-aspect-ratio: 1.75) {
+@media (max-aspect-ratio: 1.25) and (max-width:900){
     
     .container {
         flex-direction: column;
@@ -301,14 +319,14 @@ footer {
         width: 100%;
     }
     .column2 .contact {
-        top: 77%;
+        top: 57%;
         bottom: auto;
     }
 
 }
   
 /* Small devices (up to 576px) */
-@media (max-width: 576px) {
+@media (max-width: 576px)  {
     .container {
         flex-direction: column;
     }
@@ -316,7 +334,7 @@ footer {
         width: 100%;
     }
     .column2 .contact {
-        top: 77%;
+        top: 70%;
         bottom: auto;
     }
 }
@@ -353,10 +371,22 @@ footer {
 }
 */
 /* Large devices (above 992px) */
-@media (min-width: 750px) {
+@media (min-width: 900px) {
     .content {
         margin: 0%;
         padding: 0%;
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-height: 1300px) {
+    .content {
+        margin: 0%;
+        padding: 0%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .column2 .contact{
+        top:50%;
+        bottom:auto;
     }
 }
