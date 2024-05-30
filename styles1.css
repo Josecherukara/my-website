@@ -1,10 +1,9 @@
+/* General reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
 
 /* Body styles */
 body {
@@ -17,7 +16,7 @@ body {
     background-color: rgb(10, 10, 10);
     align-items: center;
     align-content: center;
-    z-index:0;
+    z-index: 0;
 }
 
 .fixed-header {
@@ -34,7 +33,7 @@ body {
 
 .fixed-header .buttons {
     display: flex;
-    width:100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     height: 70px; /* Adjust the height as needed */
@@ -78,7 +77,6 @@ nav ul li a:hover::after {
 .main {
     margin-top: 60px; /* Adjust margin to keep content below header */
     margin-bottom: 100px; /* Adjust margin to keep content above footer */
-    /*overflow-y: auto;  Enable scrolling for main content */
     display: flex;
     flex: 1;
     position: relative;
@@ -91,47 +89,40 @@ nav ul li a:hover::after {
     overflow-y: auto;
     overflow-x: hidden;
     height: auto;
-    /*max-height: calc(70vh) Adjust height to fit between header and footer */
 }
-/*
-.column {
-   
-    position: relative;
-    min-height: 100%;
-    height: auto;
-}
-*/
+
 .column1 {
     width: 50%;
     overflow-x: auto;
     overflow-y: hidden;
     background-color: white;
-    min-height: 100vh;;
+    min-height: 100vh;
     height: auto;
     padding-left: 6%;
     padding-bottom: 30px;
-    z-index:0;
+    z-index: 0;
     flex-direction: column;
-    /* font-family: 'Times New Roman', Times, serif;  Change font family */
-    /*font-size: 8px; Change font size */
 }
 
 .container .column1 .content {
-    padding:3%;
+    padding: 3%;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #333; /* Change font family */
 }
-.container .column1 .content .cartooncontainer{
-    width:100%;
+
+.container .column1 .content .cartooncontainer {
+    width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-   }
-.container .column1 .content .cartooncontainer img{
+}
+
+.container .column1 .content .cartooncontainer img {
     left: 25%;
-    width:70%;
-   }
-.container .column1 .content  .button {
-    right:53%;
+    width: 70%;
+}
+
+.container .column1 .content .button {
+    right: 53%;
     display: inline-block;
     padding: 15px 0px;
     background-color: #3771a0;
@@ -145,12 +136,10 @@ nav ul li a:hover::after {
     position: absolute;
 }
 
-/* Button Hover Effect */
 .container .column1 .content .button:hover {
     background-color: #102c42;
 }
 
-/* Text Overlay */
 .container .column1 .content .button::after {
     content: attr(data-text);
     color: white;
@@ -165,69 +154,52 @@ nav ul li a:hover::after {
     z-index: 1;
 }
 
-
 .column2 {
     width: 50%;
     overflow-y: auto;
     overflow-x: auto;
     vertical-align: middle;
     position: relative;
-    z-index:0;
+    z-index: 0;
     background-color: black;
     min-height: 100vh;
-    height:auto;
+    height: auto;
     color: white;
     padding: 0%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .column2 .containerRand {
     vertical-align: middle;
     width: 100%;  /* Adjust the width as needed */
     height: 70vh; /* Adjust the height as needed */
     position: relative;
     overflow: auto;
-    padding:2px;
-   /* border: 1px solid #ccc;*/
+    padding: 2px;
 }
-.column2 .contact{
+
+.column2 .contact {
     position: absolute;
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: auto;
     top: 73vh;
-    bottom:22vh;
+    bottom: 22vh;
     text-align: right;
-    right:0%;
+    right: 0%;
     padding: 5%;
     display: flex;
     flex-direction: column;
 }
-.column2 .contact ul{
 
+.column2 .contact ul {
     text-align: left;
 }
-/*
-.column2 .containerRand .box {
-   display: none;  /* Hide the box containing the images 
-}
-/*
-.column2 .containerRand .box .random-image{
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   /* object-fit: contain; /* Ensures the image fits inside the container 
-}*/
 
-.column2 .containerRand img{
-    width:100%;
+.column2 .containerRand img {
+    width: 100%;
 }
-
 
 .column1 .name-container {
     margin-bottom: 20px; /* Add margin-bottom to prevent overlap with header */
@@ -235,23 +207,26 @@ nav ul li a:hover::after {
 
 .fixed-image {
     position: fixed;
-    bottom:0vh;  /*Place at the bottom */
+    bottom: 0vh;  /*Place at the bottom */
     right: 0px; /* Adjust as needed */
     width: 60px; /* Adjust as needed for smaller size */
     height: auto; /* Maintain aspect ratio */
     opacity: 0.5; /* Adjust this value to set the transparency level */
     z-index: 1000; /* Ensure it stays on top of other elements */
 }
-.copyrt { position: fixed;
+
+.copyrt {
+    position: fixed;
     text-align: left;
-    bottom:0vh;  /*Place at the bottom */
+    bottom: 0vh;  /*Place at the bottom */
     left: 10px; /* Adjust as needed */
     width: 100%; /* Adjust as needed for smaller size */
     height: auto; /* Maintain aspect ratio */
     opacity: 0.5; /* Adjust this value to set the transparency level */
     z-index: 1000; /* Ensure it stays on top of other elements */
-    color:white;
-    }
+    color: white;
+}
+
 /* Footer styles */
 footer {
     position: fixed;
@@ -259,7 +234,7 @@ footer {
     left: 0;
     width: 100%;
     height: 20vh; /* Adjust height as needed */
-    background: linear-gradient(to right,  #3498db,#2c3e50, #000508,black);
+    background: linear-gradient(to right, #3498db, #2c3e50, #000508, black);
     color: #fff;
     padding: 0px;
     display: flex;
@@ -304,58 +279,44 @@ footer {
 /* Media queries for different screen sizes */
 
 /* Small devices (up to 576px) */
-
 @media (max-width: 576px) {
-    .flex-container {
+    .container {
         flex-direction: column;
     }
-    .flex-item {
+    .column1, .column2 {
         width: 100%;
     }
-    .name-container {
-        position: static;
-        transform: none;
-    }
-    .main .column1 .content {
-        margin-top: 0;
-        padding-left: 10%;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .content {
-        margin: 5px;
-        padding: 10px;
-        grid-template-columns: 1fr;
-    }
-    .column2 .contact{
-        position: absolute;
-        width:100%;
-        height:auto;
-        top: 53vh;
-        bottom:22vh;
-        text-align: right;
-        right:0%;
-        padding: 5%;
-        display: flex;
-        flex-direction: column;
+    .column2 .contact {
+        top: auto;
+        bottom: 22vh;
     }
 }
 
 /* Medium devices (between 577px and 992px) */
-@media (min-width: 577px) and (max-width: 800px) {
-    
+@media (min-width: 577px) and (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+    .column1, .column2 {
+        width: 100%;
+    }
+    .column2 .contact {
+        top: auto;
+        bottom: 22vh;
+    }
     .main .column1 .content {
         margin-top: 0;
         padding-left: 10%;
         grid-template-columns: repeat(2, 1fr);
     }
-    .column2 .contact{
+    .column2 .contact {
         position: absolute;
-        width:100%;
-        height:auto;
+        width: 100%;
+        height: auto;
         top: 53vh;
-        bottom:22vh;
+        bottom: 22vh;
         text-align: right;
-        right:0%;
+        right: 0%;
         padding: 5%;
         display: flex;
         flex-direction: column;
@@ -363,7 +324,7 @@ footer {
 }
 
 /* Large devices (above 992px) */
-@media (min-width: 800px) {
+@media (min-width: 750px) {
     .content {
         margin: 0%;
         padding: 0%;
