@@ -278,6 +278,21 @@ footer {
 
 /* Media queries for different screen sizes */
 
+@media (max-aspect-ratio: 0.75) {
+    
+        .container {
+            flex-direction: column;
+        }
+        .column1, .column2 {
+            width: 100%;
+        }
+        .column2 .contact {
+            top: auto;
+            bottom: 22vh;
+        }
+    
+}
+  
 /* Small devices (up to 576px) */
 @media (max-width: 576px) {
     .container {
