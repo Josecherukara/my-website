@@ -199,6 +199,36 @@ canvas {
         transform: none;
     }
 
+    .container{
+        flex-direction: column;
+    }
+    .left, .middle, .right{
+        width:100%;    
+    }
+    
+    .content {
+        margin: 0px;
+        padding: 0px;
+        grid-template-columns: 1fr;
+    }
+    canvas {
+        border: 1px solid black;
+        height: auto;
+    }
+}
+@media (max-width: 443px) {
+    .name-container {
+        position: static;
+        transform: none;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+    .left, .middle, .right{
+        width:100%;    
+    }
+    
     .content {
         margin: 0px;
         padding: 0px;
