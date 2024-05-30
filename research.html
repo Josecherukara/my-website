@@ -11,21 +11,68 @@
             padding: 0;
             background-color: #f8f8f8;
             color: #333;
-            background: linear-gradient(to right, #2c3e50, #3498db);
+            background: linear-gradient(to right, #96c5f5, #74c6fc);
         }
-        header {
-            background: url('R.jpg') no-repeat center center;
-            background-size: cover;
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-            height: 400px; /* Adjusted height to include buttons */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .fixed-header {
+            top:0%;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: fixed;
+            width: 100%;
+            height: 60px; /* Adjust height as needed */
+            padding: 20px;
+            /*background: url('R.png') no-repeat center center;*/
+           background: linear-gradient(to right, #2c3e50, #3498db);
+            z-index: 1;
         }
+
+        .fixed-header .buttons {
+            display: flex;
+            width:100%;
+            justify-content: center;
+            align-items: center;
+            height: 70px; /* Adjust the height as needed */
+        }
+        
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    color: whitesmoke;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color:#f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f1c40f;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+/*
+nav ul li{
+    font-size: xx-large;
+}*/
+/*
         header h1 {
             margin: 0;
             font-size: 2.5em;
@@ -56,10 +103,14 @@
         .button:hover {
             background-color: #2980b9;
             transform: scale(1.05);
-        }
+        }*/
         .container {
-            max-width: 900px;
-            margin: 30px auto;
+            width:80%;
+            margin-top: 200px;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            position: relative;
+    
             padding: 20px;
             background-color: white;
             border-radius: 10px;
@@ -84,6 +135,7 @@
             border-bottom: 2px solid #3498db;
             padding-bottom: 5px;
         }
+        
         .flex-container {
             display: flex;
             justify-content: space-between;
@@ -96,6 +148,10 @@
         ul {
             list-style-type: disc;
             padding-left: 20px;
+        }
+        .projectsimg{
+            width:97%;
+            position: relative;
         }
         footer {
             text-align: center;
@@ -119,13 +175,18 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Research Portfolio</h1>
-        <div class="button-container">
-            <a href="index.html" class="button">Home</a>
-            <a href="teachingportfolio.html" class="button">Teaching</a>
-            <a href="research.html" class="button">Research</a>
-            <a href="others.html" class="button">Others</a>
+    <header class="fixed-header">
+       
+        <div class="buttons">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="teachingportfolio.html">Teaching</a></li>
+                    <li><a href="research.html">Research</a></li>
+                   <!-- <li><a href="#">Group</a></li>-->
+                    <li><a href="others.html">Other</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -135,7 +196,13 @@
                 <h2>Publications</h2>
             </div>
             <div class="section-content">
-                <p>Here, you can list your notable research publications.</p>
+                <h3>You could reach out to my complete publications here</h3>
+                       
+                        <a href="https://inspirehep.net/authors/1920859" target="_blank"> <img src="inspirelogo.jpg" alt="INSPIRE-HEP Logo"></a>
+                        <br>
+                        <a href="https://scholar.google.com/citations?user=SYAp0qIAAAAJ&hl=en" target="_blank"><img src="googlescholoarlogo.jpg" alt="Google Scholar Logo"></a>
+                    
+                
             </div>
         </section>
 
@@ -144,7 +211,10 @@
                 <h2>Projects</h2>
             </div>
             <div class="section-content">
-                <p>Describe your key research projects here.</p>
+                <p>My research mainly focuses on modelling Inflation. Exploring various aspects of new and past models</p>
+                <h4>Over view of my PhD Thesis</h4>
+                <a href="overviewphd.jpg" target="_blank"><img src="overviewphd.jpg" alt="overviewphd" class="projectsimg"></a>
+                   
             </div>
         </section>
 
@@ -153,7 +223,7 @@
                 <h2>Collaborations</h2>
             </div>
             <div class="section-content">
-                <p>Highlight your research collaborations with other institutions or researchers.</p>
+                <p>Currently I am collaborsting with Krishnamohan P of IIT Mandi</p>
             </div>
         </section>
 
@@ -162,7 +232,7 @@
                 <h2>Awards</h2>
             </div>
             <div class="section-content">
-                <p>List any awards or recognitions you have received for your research.</p>
+                <p>I am awarded CSIR-UGC JRF and SRF Fellowships.</p>
             </div>
         </section>
     </div>
