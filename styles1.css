@@ -240,7 +240,7 @@ nav ul li a:hover::after {
 .copyrt { position: fixed;
     text-align: left;
     bottom:0vh;  /*Place at the bottom */
-    left: 0px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
     width: 100%; /* Adjust as needed for smaller size */
     height: auto; /* Maintain aspect ratio */
     opacity: 0.5; /* Adjust this value to set the transparency level */
