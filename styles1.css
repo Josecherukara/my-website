@@ -282,7 +282,8 @@ footer {
 }
 
 /* Media queries for different screen sizes */
-@media (max-aspect-ratio: 0.8) and (max-width:800) {
+
+@media (max-aspect-ratio: 1.5) and (min-width:800px){
     
     .container {
         flex-direction: column;
@@ -296,7 +297,7 @@ footer {
     }
 
 }
-@media (max-aspect-ratio: 1.0) and (max-width:900) {
+@media (max-aspect-ratio: 1.0) and (min-width:700px) {
     
         .container {
             flex-direction: column;
@@ -310,7 +311,7 @@ footer {
         }
     
 }
-@media (max-aspect-ratio: 1.25) and (max-width:900){
+@media (max-aspect-ratio: 0.7) and (min-width:576px){
     
     .container {
         flex-direction: column;
@@ -334,7 +335,7 @@ footer {
         width: 100%;
     }
     .column2 .contact {
-        top: 70%;
+        top: 60%;
         bottom: auto;
     }
 }
@@ -371,7 +372,8 @@ footer {
 }
 */
 /* Large devices (above 992px) */
-@media (min-width: 900px) {
+
+@media (min-width: 1300px) {
     .content {
         margin: 0%;
         padding: 0%;
@@ -380,13 +382,14 @@ footer {
 }
 
 @media (min-height: 1300px) {
-    .content {
-        margin: 0%;
-        padding: 0%;
-        grid-template-columns: repeat(3, 1fr);
+    .container {
+        flex-direction: column;
     }
-    .column2 .contact{
-        top:50%;
-        bottom:auto;
+    .column1, .column2 {
+        width: 100%;
+    }
+    .column2 .contact {
+        top: 70%;
+        bottom: auto;
     }
 }
