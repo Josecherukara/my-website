@@ -181,7 +181,7 @@ nav ul li a:hover::after {
     width: 100%;  /* Adjust the width as needed */
     height: 70vh; /* Adjust the height as needed */
     position: relative;
-    overflow: auto;
+    overflow: hidden;
     padding: 2px;
 }
 
@@ -189,7 +189,7 @@ nav ul li a:hover::after {
     position: absolute;
     width: 100%;
     height: auto;
-    top: 65%;
+    top: 45%;
     bottom: auto;
     text-align: right;
     right: 0%;
