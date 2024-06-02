@@ -306,7 +306,7 @@ footer {
             width: 100%;
         }
         .column2 .contact {
-            top: 62%;
+            top: 55%;
             bottom: auto;
         }
     
@@ -320,7 +320,7 @@ footer {
         width: 100%;
     }
     .column2 .contact {
-        top: 57%;
+        top: 50%;
         bottom: auto;
     }
 
@@ -335,7 +335,7 @@ footer {
         width: 100%;
     }
     .column2 .contact {
-        top: 60%;
+        top: 46%;
         bottom: auto;
     }
 }
@@ -389,7 +389,7 @@ footer {
         width: 100%;
     }
     .column2 .contact {
-        top: 70%;
+        top: 45%;
         bottom: auto;
     }
 }
