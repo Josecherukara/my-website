@@ -283,7 +283,7 @@ footer {
 
 /* Media queries for different screen sizes */
 
-@media (max-aspect-ratio: 1.5) and (min-width:800px){
+@media (max-aspect-ratio: 1.5) and (min-width:900px){
     
     .container {
         flex-direction: column;
@@ -292,7 +292,7 @@ footer {
         width: 100%;
     }
     .column2 .contact {
-        top: 45%;
+        top: 55%;
         bottom: auto;
     }
 
@@ -306,7 +306,7 @@ footer {
             width: 100%;
         }
         .column2 .contact {
-            top: 55%;
+            top: 65%;
             bottom: auto;
         }
     
