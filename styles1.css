@@ -327,7 +327,7 @@ footer {
 }
   
 /* Small devices (up to 576px) */
-@media (max-width: 576px)  {
+@media (max-width: 576px) and (min-height:771px) {
     .container {
         flex-direction: column;
     }
@@ -336,6 +336,18 @@ footer {
     }
     .column2 .contact {
         top: 46%;
+        bottom: auto;
+    }
+}
+@media (max-width: 576px) and (max-height:770px) {
+    .container {
+        flex-direction: column;
+    }
+    .column1, .column2 {
+        width: 100%;
+    }
+    .column2 .contact {
+        top: 60%;
         bottom: auto;
     }
 }
